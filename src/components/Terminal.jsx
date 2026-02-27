@@ -5,9 +5,9 @@ import { COMMANDS } from "../utils/commands";
 
 const Terminal = () => {
   const [history, setHistory] = useState([
-  { 
-    cmd: '', 
-    resp: ` $$$$$$\\  $$\\                 $$\\ $$\\                               
+    {
+      cmd: "",
+      resp: ` $$$$$$\\  $$\\                 $$\\ $$\\                               
 $$  __$$\\ $$ |                $$ |$$ |                              
 $$ /  \\__|$$$$$$$\\   $$$$$$\\  $$ |$$ |    $$$$$$\\$$\\$$\\   $$$$$$\\  
 \\$$$$$$\\  $$  __$$\\ $$  __$$\\ $$ |$$ |    $$  _$$  _$$ \\ $$  __$$\\ 
@@ -17,9 +17,9 @@ $$\\   $$ |$$ |  $$ |$$   ____|$$ |$$ |    $$ | $$ | $$ |$$   ____|
  \\______/ \\__|  \\__| \\_______|\\__|\\__|\\__|\\__| \\__| \\__| \\_______|
 
 Welcome to shell.me [Version 1.0.0]
-Type 'help' to see available commands.` 
-  }
-]);
+Type 'help' to see available commands.`,
+    },
+  ]);
   const [input, setInput] = useState("");
   const [cmdHistory, setCmdHistory] = useState([]);
   const [historyPointer, setHistoryPointer] = useState(-1);
